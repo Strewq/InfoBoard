@@ -1,0 +1,71 @@
+@import "../../commonStyles/lightButton.scss";
+@import "../../commonStyles/lightTextInput.scss";
+
+.timeListAddForm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+}
+
+.listItem {
+	@extend %lightTextInputContainer;
+
+	height: auto;
+
+	margin-top: -2px;
+	padding: 0.4em;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	& > div {
+		border: none;
+		padding: 0;
+	}
+}
+
+.button {
+	@extend %lightButton;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: #00000000;
+	
+	padding: 0;
+
+	align-self: center;
+	flex-shrink: 0;
+
+	font-size: 1em;
+	height: 2em;
+	width: 2em;
+
+	margin-left: 0.5em;
+
+	transition-property: background-color;
+	transition-duration: 200ms;
+
+	&:hover {
+		background-color: var(--hoverButtonColor);
+	}
+
+	&:active {
+		background-color: var(--activeButtonColor);
+	}
+
+
+	& > img {
+		width: 80%;
+		height: 80%;
+	}
+}
+
+.newTimeInput {
+	opacity: 0.6;
+}

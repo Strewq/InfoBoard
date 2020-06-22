@@ -1,0 +1,63 @@
+@import "../../commonStyles/lightButton.scss";
+
+.infoContainer {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.changeButton {
+	@extend %lightButton;
+
+	display: flex;
+
+	box-sizing: border-box;
+	
+	width: 1.5em;
+
+	padding: 0.2em;
+
+	background-color: #00000000;
+
+	transition: background-color 200ms;
+
+	&:hover {
+		background-color: var(--hoverButtonColor);
+	}
+
+	&:active {
+		background-color: var(--activeButtonColor);
+	}
+
+	& > img {
+		width: 100%;
+	}
+}
+
+.actual {
+
+}
+
+.comparisonOperatorIcon {
+	width: 1.5em;
+
+	margin: 0 0.4em;
+	
+	opacity: 0.3;
+
+	transition: opacity 300ms;
+
+	&.isCompleted {
+		opacity: 1;
+	}
+}
+
+.expected {
+
+}

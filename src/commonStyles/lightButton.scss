@@ -1,0 +1,10 @@
+%lightButton {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+
+	& > * {
+		pointer-events: none;
+	}
+}

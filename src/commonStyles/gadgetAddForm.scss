@@ -1,0 +1,49 @@
+.gadgetAddForm {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #00000010;
+
+	background-color: #ffffff;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	box-sizing: border-box;
+	
+	padding: 2em;
+
+	transition: border-color 500ms;
+	
+	&.invalidForm {
+		border-color: red;
+	}
+
+	& > * {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		flex-shrink: 0;
+
+		width: 100%;
+
+		margin-top: 1.5em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		& > span {
+			margin-bottom: 0.2em;
+		}
+	}
+}
+
+.header {
+	font-size: 1.5em;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 2em;
+}

@@ -1,0 +1,5 @@
+@import "./buttonInComponent.scss";
+
+.deleteButton {
+	@extend %buttonInComponent;
+}

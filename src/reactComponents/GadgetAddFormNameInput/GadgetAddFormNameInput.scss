@@ -1,0 +1,9 @@
+@import "../../commonStyles/lightTextInput.scss";
+
+.nameInputContainer {
+	@extend %lightTextInputContainer;
+}
+
+.nameInput {
+	@extend %lightTextInputInput;
+}

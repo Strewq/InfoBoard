@@ -1,0 +1,19 @@
+@import "./lightButton.scss";
+
+.addButton {
+	@extend %lightButton;
+	
+    background-color: #00000008;
+    padding: 1em 2em;
+    align-self: center;
+	
+	transition: background-color 200ms;
+
+	&:hover {
+		background-color: var(--hoverButtonColor);
+	}
+
+	&:active {
+		background-color: var(--activeButtonColor);
+	}
+}

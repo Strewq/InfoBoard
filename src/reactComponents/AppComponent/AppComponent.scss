@@ -1,0 +1,63 @@
+.app {
+	display: flex;
+
+	@media(orientation: landscape) {
+		flex-direction: row;
+	}
+
+	@media(orientation: portrait) {
+		flex-direction: column;
+	}
+}
+
+.left {
+	flex-shrink: 0;
+
+	@media(orientation: landscape) {
+		width: 4em;
+	}
+
+	@media(orientation: portrait) {
+		height: 4em;
+	}
+}
+
+.right {
+	display: flex;
+
+	flex-direction: column;
+	flex-grow: 1;
+	
+	padding: 2em;
+	padding-bottom: 0;
+
+	min-width: min-content;
+}
+
+.empty {
+	opacity: 0.6;
+	justify-self: start;
+}
+
+.componentSection {
+	width: 100%;
+
+	& > span {
+		display: block;
+		
+		width: 100%;
+		
+		padding-bottom: 0.2em;
+		border-bottom: solid 2px #cccccc;
+	}
+	
+	& > ul {
+		display: grid;
+
+		gap: 1em;
+
+		margin: 0;
+
+		padding: 1em;
+	}
+}

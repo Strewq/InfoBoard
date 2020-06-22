@@ -1,0 +1,74 @@
+@import "../../commonStyles/lightButton.scss";
+@import "../../commonStyles/lightTextInput.scss";
+
+.editableStringList {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+}
+
+.listItem {
+	@extend %lightTextInputContainer;
+
+	margin-top: -2px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		opacity: 0.5;
+	}
+}
+
+.input {
+	@extend %lightTextInputInput;
+
+	width: 100%;
+}
+
+.arrowContainer {
+	display: flex;
+	flex-direction: column;
+
+	& > .button {
+		height: 50%;
+	}
+}
+
+.button {
+	@extend %lightButton;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: #00000000;
+	
+	padding: 0;
+
+	font-size: 1em;
+	width: 1.8em;
+
+	flex-shrink: 0;
+
+	transition-property: background-color;
+	transition-duration: 200ms;
+
+	&:hover {
+		background-color: var(--hoverButtonColor);
+	}
+
+	&:active {
+		background-color: var(--activeButtonColor);
+	}
+
+
+	& > img {
+		width: 80%;
+		height: 80%;
+	}
+}

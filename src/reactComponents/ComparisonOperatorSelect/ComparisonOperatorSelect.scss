@@ -1,0 +1,32 @@
+@import "../../commonStyles/lightTextInput.scss";
+
+.comparisonOperatorSelect {
+	@extend %lightTextInputContainer;
+
+	position: relative;
+
+	&::after {
+		content: "";
+
+		position: absolute;
+
+		background-color: var(--textInputBorderColor);
+
+		width: 10px;
+		
+		height: 10px;
+		border-radius: 5px;
+
+		align-self: center;
+		right: 10px;
+
+		pointer-events: none;
+	}
+}
+
+.select {
+	@extend %lightTextInputInput;
+
+	appearance: none;
+	cursor: pointer;
+}

@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "ES2019",
+		"module": "ESNext",
+		"strict": true,
+		"types": [],
+		"sourceMap": true,
+		"moduleResolution": "Node",
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react",
+		"experimentalDecorators": true
+	},
+	"files": ["./src/main.tsx", "./src/types/global.d.ts"]
+}

@@ -1,0 +1,15 @@
+@import "../../commonStyles/lightTextInput.scss";
+
+.numberInputContainer {
+	@extend %lightTextInputContainer;
+}
+
+.numberInput {
+	@extend %lightTextInputInput;
+
+	appearance: textfield;
+
+	&::-webkit-inner-spin-button {
+		visibility: hidden;
+	}
+}

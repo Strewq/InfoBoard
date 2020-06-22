@@ -1,0 +1,5 @@
+@import "../../commonStyles/buttonInComponent.scss";
+
+.clearButton {
+	@extend %buttonInComponent;
+}

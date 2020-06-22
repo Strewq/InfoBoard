@@ -1,0 +1,9 @@
+@import "../../commonStyles/buttonInComponent.scss";
+
+.confirmReceiptButton {
+	@extend %buttonInComponent;
+
+	&[disabled] {
+		color: #5e5e5e
+	}
+}

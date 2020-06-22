@@ -1,0 +1,21 @@
+.commonGadgetComponent {
+	position: relative;
+	
+	display: grid;
+
+	align-items: center;
+}
+
+.flex {
+	box-sizing: border-box;
+	
+	padding: 0 0.5em;
+
+	text-align: center;
+
+	width: 100%;
+}
+
+.noData {
+	opacity: 0.6;
+}

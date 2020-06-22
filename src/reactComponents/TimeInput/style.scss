@@ -1,0 +1,116 @@
+@import "../../commonStyles/lightButton.scss";
+
+$borderSize: 2px;
+$borderColor: var(--textInputBorderColor);
+
+.timeCommonInput {
+	display: inline-flex;
+	flex-wrap: wrap;
+
+	height: fit-content;
+	
+	font-size: 2em;
+
+	text-align: right;
+
+	line-height: 1;
+
+	touch-action: none;
+	user-select: none;
+
+	padding: 0.2em;
+
+	border: solid $borderSize $borderColor;
+	background-color: var(--textInputBackgroundColor);
+
+	& > * {
+		display: inline-flex;
+
+		&:first-child {
+			margin-right: 0.5em;
+		}
+	}
+}
+
+.timeInput {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+	border: solid $borderSize $borderColor;
+	padding: 0.4em;
+
+	box-sizing: border-box;
+	width: 100%;
+
+	.timeCommonInput {
+		border: none;
+		padding: 0 0.4em 0 0;
+	}
+}
+
+.inputPartContainer {
+	cursor: pointer;
+}
+
+.sign {
+	width: 0.6em;
+	text-align: center;
+	cursor: pointer;
+}
+
+.nullButton {
+	@extend .modeButton;
+
+	font-size: 1em;
+	margin-left: 0.2em;
+}
+
+.buttonContainer {
+	display: flex;
+}
+
+.modeButton {
+	@extend %lightButton;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: #00000000;
+
+	font-size: 2em;
+	width: 1em;
+	height: 1em;
+
+	padding: 0;
+
+	transition: background-color 200ms;
+
+	&.checked {
+		background-color: #09ff0022;
+	}
+	
+	&:hover {
+		background-color: var(--hoverButtonColor);
+	}
+
+	&:active {
+		background-color: var(--activeButtonColor);
+	}
+
+	& > img {
+		width: 50%;
+	}
+}
+
+.nullValue {
+	font-size: 2em;
+
+	flex-grow: 1;
+
+	display: inline-block;
+
+	line-height: 1;
+}

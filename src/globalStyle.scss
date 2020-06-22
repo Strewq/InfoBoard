@@ -1,0 +1,49 @@
+@mixin AddFont($family, $type, $italic-suffix) {
+	@font-face {
+		font-family: $family;
+
+		@if $type == Regular {
+			font-weight: normal;
+		} @else { @if $type == Medium {
+			font-weight: 500;
+		} @else { @if $type == Light {
+			font-weight: 300;
+		}}}
+
+		@if $italic-suffix == Italic {
+			font-style: italic;
+		}
+
+		src: local("$family"), url("./fonts/$family#{$type}#{$italic-suffix}.ttf");
+	}
+}
+
+@include AddFont(Roboto, Regular, );
+@include AddFont(Roboto, Regular, Italic);
+@include AddFont(Roboto, Medium, );
+@include AddFont(Roboto, Medium, Italic);
+@include AddFont(Roboto, Light, );
+@include AddFont(Roboto, Light, Italic);
+
+:root {
+	font-family: Roboto;
+	font-size: 20px;
+
+	--textInputBackgroundColor: #00000000;
+	--textInputFocusBackgroundColor: #0066ff10;
+
+	--textInputBorderColor: #c9c9c9;
+	
+	--hoverButtonColor: #00000015;
+	--activeButtonColor: #00000030;
+}
+
+input, textarea, button {
+	font-size: 1em;
+	font-family: Roboto;
+}
+
+body {
+	margin: 0;
+	background-color: #ffffff;
+}

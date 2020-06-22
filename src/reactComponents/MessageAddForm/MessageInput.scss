@@ -1,0 +1,12 @@
+@import "../../commonStyles/lightTextInput.scss";
+
+.nameInputContainer {
+	@extend %lightTextInputContainer;
+
+	height: auto;
+}
+
+.nameInput {
+	@extend %lightTextInputInput;
+	min-height: 2.3em;
+}

@@ -1,0 +1,15 @@
+.container {
+	display: flex;
+	align-items: center;
+	height: 1em;
+	overflow: hidden;
+	line-height: 1;
+	user-select: none;
+	touch-action: none;
+}
+
+.scrollable {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
