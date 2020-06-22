@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;}
+	.st1{fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:6;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<line class="st0" x1="92" y1="85" x2="92" y2="97"/>
+<line class="st0" x1="86" y1="91" x2="98" y2="91"/>
+<circle class="st1" cx="50.3" cy="55.7" r="35.7"/>
+<line class="st2" x1="86" y1="24" x2="77.2" y2="31.6"/>
+<line class="st3" x1="50.3" y1="9.5" x2="50.3" y2="20.2"/>
+<path d="M60.7,12.5h-20c-1.1,0-2-0.9-2-2v-5c0-1.1,0.9-2,2-2h20c1.1,0,2,0.9,2,2v5C62.7,11.6,61.8,12.5,60.7,12.5z"/>
+<circle cx="50.3" cy="55.7" r="5.7"/>
+<line class="st4" x1="50.3" y1="55.7" x2="70.8" y2="70.7"/>
+</svg>
