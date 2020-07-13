@@ -26,7 +26,7 @@ module.exports = {
 	devtool: process.env.NODE_ENV === prod ? false : "inline-source-map",
 	mode: process.env.NODE_ENV,
 	resolve: {
-		extensions: [".ts", ".d.ts", ".tsx", ".js", ".jsx"]
+		extensions: [".js", ".ts", ".d.ts", ".tsx", ".jsx"]
 	},
 	module: {
 		rules: [
@@ -106,12 +106,14 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: "style.css"
 		}),
-		new CopyPlugin([
-			{
-				from: "./src/index.html",
-				to: "./"
-			}
-		]),
+		new CopyPlugin({
+			patterns: [
+				{
+					from: "./src/index.html",
+					to: "./"
+				}
+			]
+		}),
 		new FaviconsPlugin({
 			logo: "./src/imgs/favicon.svg",
 			outputPath: "./favicons",

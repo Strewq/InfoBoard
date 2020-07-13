@@ -1,4 +1,3 @@
-import "pepjs";
 import React from "react";
 import ReactDOM from "react-dom";
 import ICore from "./types/ICore";
